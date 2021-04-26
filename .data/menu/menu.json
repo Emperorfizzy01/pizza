@@ -1,0 +1,6 @@
+{
+   "available": {
+       "wines": ["Champagne", "Henessy", "MC dowell"],
+       "foods": ["Fried rice", "Salad", "Pizza", "Turkey", "Rice"]
+   } 
+}

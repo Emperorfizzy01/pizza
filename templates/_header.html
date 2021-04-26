@@ -1,0 +1,51 @@
+<html>
+   <head>
+       <!-- General Settings-->
+       <meta charset="utf-8">
+       <meta http-equiv="content-language" content="en-us">
+       <base href="{global.baseUrl}" />
+
+       <!-- Meta Tags-->
+       <title>{head.title} | {global.appName} </title>
+       <meta name="description" content="{head.description}">
+
+       <!-- Static Assets-->
+       <link type="image/x-icon" rel="icon" href="favicon.ico">
+       <script type="text/javascript" charset="utf-8" src="public/pizza.js"></script>
+       <link rel="stylesheet" type="text/css" href="public/pizza.css" />
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+       
+   </head>
+   <body class="{body.class}">
+      <!-- Page wrapper-->
+      <div class='wrapper'>
+
+      <!-- Header-->
+      <div class='header'>
+        <!-- Navigation -->
+        <ul>
+           <li>
+             <a href="/">Home</a>
+           </li>
+           <li>
+            <a class="loggedOut" href="/account/create">Signup</a>
+          </li>
+          <li>
+            <a class="loggedOut" href="/session/create">Login</a>
+          </li>
+          <li>
+            <a class="loggedIn" href="/account/edit">Account Settings</a>
+          </li>
+          <li>
+            <a class="loggedIn" href="#" id="logoutButton">Logout</a>
+          </li>
+          <li>
+           <button id="button3"><i class="fas fa-shopping-cart"></i></button>
+          </li>
+        </ul>   
+
+
+      </div>
+
+      <!-- Page-Specific Content-->
+      <div class='content'>

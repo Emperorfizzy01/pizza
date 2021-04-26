@@ -1,0 +1,44 @@
+<h1>Account Settings</h1>
+
+<hr />
+
+<h2>Edit your account details</h2>
+
+<div class="formWrapper">
+  <form id="accountEdit1" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your Changes Have Been Saved</div>
+    <input class="hiddenEmailInput"  type="hidden" name="emailAddress" />
+    <div class="inputWrapper">
+      <div class="inputLabel">Email Address</div>
+      <input class="disabled displayEmailInput" type="text" name="emailAddress" disabled />
+    </div>
+    <div class="inputWrapper">
+      <div class="inputLabel">User Name</div>
+      <input class="userNameInput" type="text" name="userName" placeholder="Fizzy" />
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+
+<hr />
+<h2>Change Your Street Address</h2>
+<div class="formWrapper">
+  <form id="accountEdit2" action="/api/users" method="PUT">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="formError"></div>
+    <div class="formSuccess">Your New Street Address Has Been Saved</div>
+    <input class="hiddenEmailInput" type="hidden" name="emailAddress" />
+    <div class="inputWrapper">
+      <div class="inputLabel">Choose a Street Address</div>
+      <input type="text" name="streetAddress"/>
+    </div>
+    <div class="inputWrapper ctaWrapper">
+      <button type="submit" class="cta green">Save Changes</button>
+    </div>
+  </form>
+</div>
+<hr />
